@@ -4,14 +4,15 @@ var name = 'Tyler';
 //Create a function called isTyler that accepts name as it's only parameter.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
-var isTyler = function(name){
-  var lcname = name.toLowerCase();
-  if(lcname == "tyler"){
+function isTyler(name){
+
+  if(name === "Tyler"){
     return true;
   } else{
     return false;
   }
-};
+}
+
 
 
 
@@ -22,9 +23,9 @@ var isTyler = function(name){
 
 
 var getName = function(){
-  var name = prompt("Please enter your name.", "name");
+  var name = prompt("Please enter your name.");
   return name;
-}
+};
 
 
 
@@ -35,9 +36,11 @@ var getName = function(){
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-var welcome = function(){
-  return "Welcome " + getName();
+function welcome(){
+  var name = getName();
+  alert("Welcome, " + name);
 }
+
 
 
 
@@ -57,12 +60,12 @@ var welcome = function(){
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-null
-NaN
-undefined
-0
-false
-""
+//  null
+// NaN
+// undefined
+// 0
+// false
+// ""
 
 
 
@@ -74,19 +77,19 @@ false
 //Create a function called myName that returns your name
 
   //Code Here
-var myName = functon(name){
-  return name;
+var myName = function(){
+  return "ryan";
 }
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
 
-  var newMyName = myName("Ryan");
+  var newMyName = myName;
 
 //Now alert the result of invoking newMyName
 
-return newMyName;
+alert(newMyName);
 
 
 //////////////////PROBLEM 7////////////////////
@@ -95,8 +98,8 @@ return newMyName;
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  var outerHn = function(){
-    return var anonymous = runction(){
+  var outerFn = function(){
+    return function(){
       return "Ryan"
     }
   }
@@ -106,4 +109,4 @@ return newMyName;
   var innerFn = outerFn();
 
 //Now invoke innerFn.
-return innerFn
+innerFn();
