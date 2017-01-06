@@ -4,13 +4,15 @@ var name = 'Tyler';
 //Create a function called isTyler that accepts name as it's only parameter.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
-  var isTyler = function(name){
-    if(name == "Tyler"){
-      return true;
-    } else{
-      return false;
-    }
+var isTyler = function(name){
+  var lcname = name.toLowerCase();
+  if(lcname == "tyler"){
+    return true;
+  } else{
+    return false;
   }
+};
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -23,7 +25,7 @@ var getName = function(){
   var name = prompt("Please enter your name.", "name");
   return name;
 }
-)
+
 
 
 //////////////////PROBLEM 3////////////////////
@@ -33,7 +35,10 @@ var getName = function(){
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
+var welcome = function(){
+  return "Welcome " + getName();
+}
+
 
 
 //////////////////PROBLEM 4////////////////////
