@@ -48,7 +48,6 @@ var welcome = function(){
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
 
 
 //////////////////PROBLEM 5////////////////////
@@ -58,7 +57,13 @@ var welcome = function(){
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
+null
+NaN
+undefined
+0
+false
+""
+
 
 
 
@@ -69,15 +74,19 @@ var welcome = function(){
 //Create a function called myName that returns your name
 
   //Code Here
-
+var myName = functon(name){
+  return name;
+}
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+
+  var newMyName = myName("Ryan");
 
 //Now alert the result of invoking newMyName
 
+return newMyName;
 
 
 //////////////////PROBLEM 7////////////////////
@@ -86,10 +95,15 @@ var welcome = function(){
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
+  var outerHn = function(){
+    return var anonymous = runction(){
+      return "Ryan"
+    }
+  }
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-  //Code Here
+  var innerFn = outerFn();
 
 //Now invoke innerFn.
+return innerFn
